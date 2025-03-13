@@ -84,8 +84,11 @@ def main():
         name = can['name']
         radius = can['radius']
         height = can['height']
-        storage_efficiency = compute_volume(radius,height) / compute_surface_area(radius, height)
-        print(f'{name} {storage_efficiency:.2f}')
+        cost = can['cost']
+        storage_efficiency = compute_storage_efficiency(radius, height)
+        volume = compute_volume(radius, height)
+        cost_efficiency = compute_cost_efficiency(volume, cost)
+        print(f'{name} {storage_efficiency:.2f}, {cost_efficiency:.2f}')
 
 # Define the volume function for the can
 def compute_volume(radius, height):
@@ -95,5 +98,15 @@ def compute_volume(radius, height):
 def compute_surface_area(radius, height):
     surface_area = 2 * pi * radius * (radius + height)
     return surface_area
+
+def compute_storage_efficiency(radius, height):
+    volume = compute_volume(radius, height)
+    surface_area = compute_surface_area(radius, height)
+    storage_efficiency = volume / surface_area
+    return storage_efficiency
+
+def compute_cost_efficiency(volume, cost):
+    cost_efficiency = volume / cost
+    return cost_efficiency
 
 main()
