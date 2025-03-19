@@ -340,5 +340,5 @@ def make_sentence(quantity, tense):
     sentence = f"{determiner.capitalize()} {noun} {other_prepositional_phrase} {adverb} {verb} {prepositional_phrase}."
     return sentence
 
-
-main()
+if __name__ == '__main__':
+    main()
