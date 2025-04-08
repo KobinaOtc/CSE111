@@ -1,0 +1,57 @@
+CSE 111 Proposal for a Student Chosen Program
+
+    (This is a proposal. All proposals are written with our best
+    knowledge at the beginning of a project. As we progress from the
+    beginning to the end of a project, we gain more knowledge, and we
+    change some of our proposed ideas. This is part of completing any
+    project and is fine.  However, we still must write a proposal so
+    that our teachers or supervisors know what we intend to do. Please
+    answer each of the following questions to the best of your
+    knowledge.)
+
+1. What is the title of your program?
+    My Life Planner: A Simple Date & Task Tracker with Python GUI
+
+2. What real-world problem will your program address or help to solve?
+    Many people struggle to stay organized and keep track of their goals, 
+    deadlines, and personal tasks—especially when life gets busy. Using 
+    paper planners or mobile apps can sometimes be overwhelming or full of 
+    distractions.
+
+3. What will you learn from developing this program?
+    I will learn:
+    1. Using Tkinter (or Kivy) to create windows, frames, labels, buttons, 
+        and text fields
+    2. Using the datetime module to calculate countdowns and due dates
+    3. Generating unique 6-character IDs with the random and string modules
+    4. Updating GUI components dynamically
+
+4. What Python modules will your program use?
+    1. tkinter
+    2. kivy
+    3. datetime
+    4. random
+    5. string
+
+    (Some examples are: csv, datetime, functools, matplotlib, math,
+    pandas, pytest, random, requests, and tkinter.)
+
+5. List the names of functions you will need?
+    calculate_days_remaining, generate_task_id, format_task_output, add_task
+    (Remember that the most reusable functions don't get user input and
+    don't print results but instead have parameters and return a result.
+    Functions that get user input and print results are important and do
+    useful work but are not easily reusable.)
+
+    (Remember also that it's hard to test functions that get user input
+    and print results. It's easy to test functions that don't get user
+    input and don't print results but instead have parameters and return
+    a result. Therefore, you should write most of your program functions
+    to have parameters and return a result.)
+
+6. List the names of the test functions you will write.
+    1. test_calculate_days_remaining
+    2. test_generate_task_id
+    3. test_format_task_output
+    4. test_add_task
+
